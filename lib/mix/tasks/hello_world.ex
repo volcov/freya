@@ -14,7 +14,7 @@ defmodule Mix.Tasks.HelloWorld do
 
     if Mix.shell().yes?("Are you sure?") do
       Mix.shell().cmd("mix new ../#{List.first(args)}")
-      FileGenerator.generate("custom_module.ex.eex", List.first(args), "pimpao")
+      FileGenerator.generate("custom_module.ex.eex", List.first(args), List.last(args))
     end
   end
 end
