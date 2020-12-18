@@ -1,0 +1,10 @@
+# NAO MEXER NESSE ARQUIVO AQUI
+# TEMPLATE AMIGAO
+
+defmodule <%= String.capitalize(options.module_name) %> do
+  require Logger
+
+  def loga_alguma_coisa(coisa) do
+    Logger.info(coisa)
+  end
+end
